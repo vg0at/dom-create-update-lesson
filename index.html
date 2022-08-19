@@ -8,7 +8,7 @@
     <title>DOM Manipulation</title>
     <link rel="stylesheet" href="./style.css">
     <!-- JS file in head works, but MUST add "defer" keyword  -->
-    <!-- <script defer src="./app.js"></script> -->
+    <script defer src="./app.js"></script>
 </head>
 
 <body>
@@ -20,19 +20,19 @@
                     <li><a href="#" target="_blank">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li><a href="#">Reviews</a></li>
+                    <li id="reviews"><a href="#">Reviews</a></li>
                 </ul>
             </nav>
         </header>
         <div id="content">
             <aside>
                 <ol>
-                    <li class="product">Shirts</li>
-                    <li class="product">Pants</li>
+                    <li id="first-item" class="product group"><a href="">Shirts</a></li>
+                    <li class="product"><span>Pants</span></li>
                     <li class="product">Shoes</li>
                     <li class="product">Hats</li>
                     <li class="product">Belts</li>
-                    <li class="product">Jewelry</li>
+                    <li class="product group">Jewelry</li>
                 </ol>
             </aside>
             <main>
@@ -54,6 +54,7 @@
             <h6>CMoney Labs. 2022</h6>
         </footer>
     </div>
+    <!-- <script src="./app.js"></script> -->
 </body>
 
 </html>
